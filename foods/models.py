@@ -9,7 +9,7 @@ from utils.models import UUIDModel
 
 def food_directory_path(instance, filename):
     name = str(datetime.datetime.now().timestamp()).split(".")[0]
-    return f"{instance.client.uuid}/food/{name}.png"
+    return f"food/{name}.png"
 
 
 class SubMenu(UUIDModel):
